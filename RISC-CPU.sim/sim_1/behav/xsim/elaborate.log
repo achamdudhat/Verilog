@@ -1,0 +1,35 @@
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Users/achpe/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto a4a29ddb9e7e4a109135d49168dbd976 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot testbench_behav xil_defaultlib.testbench xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 5 for port 'regrt' [C:/Users/achpe/Lab3/Lab3.srcs/sim_1/new/testbench.v:61]
+WARNING: [VRFC 10-3091] actual bit length 5 differs from formal bit length 1 for port 'regrt' [C:/Users/achpe/Lab3/Lab3.srcs/sources_1/new/Lab3design.v:732]
+WARNING: [VRFC 10-3091] actual bit length 5 differs from formal bit length 1 for port 'regrt' [C:/Users/achpe/Lab3/Lab3.srcs/sources_1/new/Lab3design.v:733]
+WARNING: [VRFC 10-3091] actual bit length 5 differs from formal bit length 32 for port 'sa' [C:/Users/achpe/Lab3/Lab3.srcs/sources_1/new/Lab3design.v:739]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 32 for port 'out' [C:/Users/achpe/Lab3/Lab3.srcs/sources_1/new/Lab3design.v:744]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.program_Counter
+Compiling module xil_defaultlib.pcAdder
+Compiling module xil_defaultlib.multipexer
+Compiling module xil_defaultlib.instruction_mem
+Compiling module xil_defaultlib.control_unit
+Compiling module xil_defaultlib.instruction_mux
+Compiling module xil_defaultlib.mux_wn
+Compiling module xil_defaultlib.mux_d
+Compiling module xil_defaultlib.register_file
+Compiling module xil_defaultlib.selector
+Compiling module xil_defaultlib.extender_16to_32
+Compiling module xil_defaultlib.selector_for_b
+Compiling module xil_defaultlib.shiftaddr_plus
+Compiling module xil_defaultlib.shiftaddr
+Compiling module xil_defaultlib.alu_unit
+Compiling module xil_defaultlib.mux_after_data
+Compiling module xil_defaultlib.data_mem
+Compiling module xil_defaultlib.datapath
+Compiling module xil_defaultlib.testbench
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot testbench_behav

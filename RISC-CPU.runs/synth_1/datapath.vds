@@ -1,0 +1,55 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Thu May  4 20:19:51 2023
+# Process ID: 17992
+# Current directory: C:/Users/achpe/Lab3/Lab3.runs/synth_1
+# Command line: vivado.exe -log datapath.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source datapath.tcl
+# Log file: C:/Users/achpe/Lab3/Lab3.runs/synth_1/datapath.vds
+# Journal file: C:/Users/achpe/Lab3/Lab3.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source datapath.tcl -notrace
+Command: synth_design -top datapath -part xc7z010clg400-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 9476 
+WARNING: [Synth 8-2301] loop variable declaration is not allowed in this mode of verilog [C:/Users/achpe/Lab3/Lab3.srcs/sources_1/new/Lab3design.v:514]
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:00 ; elapsed = 00:00:02 . Memory (MB): peak = 369.660 ; gain = 113.965
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'datapath' [C:/Users/achpe/Lab3/Lab3.srcs/sources_1/new/Lab3design.v:701]
+INFO: [Synth 8-6157] synthesizing module 'program_Counter' [C:/Users/achpe/Lab3/Lab3.srcs/sources_1/new/Lab3design.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'program_Counter' (1#1) [C:/Users/achpe/Lab3/Lab3.srcs/sources_1/new/Lab3design.v:23]
+INFO: [Synth 8-6157] synthesizing module 'pcAdder' [C:/Users/achpe/Lab3/Lab3.srcs/sources_1/new/Lab3design.v:39]
+INFO: [Synth 8-6155] done synthesizing module 'pcAdder' (2#1) [C:/Users/achpe/Lab3/Lab3.srcs/sources_1/new/Lab3design.v:39]
+INFO: [Synth 8-6157] synthesizing module 'multipexer' [C:/Users/achpe/Lab3/Lab3.srcs/sources_1/new/Lab3design.v:60]
+INFO: [Synth 8-6155] done synthesizing module 'multipexer' (3#1) [C:/Users/achpe/Lab3/Lab3.srcs/sources_1/new/Lab3design.v:60]
+INFO: [Synth 8-6157] synthesizing module 'instruction_mem' [C:/Users/achpe/Lab3/Lab3.srcs/sources_1/new/Lab3design.v:391]
+WARNING: [Synth 8-3848] Net pc in module/entity instruction_mem does not have driver. [C:/Users/achpe/Lab3/Lab3.srcs/sources_1/new/Lab3design.v:392]
+INFO: [Synth 8-6155] done synthesizing module 'instruction_mem' (4#1) [C:/Users/achpe/Lab3/Lab3.srcs/sources_1/new/Lab3design.v:391]
+INFO: [Synth 8-6157] synthesizing module 'control_unit' [C:/Users/achpe/Lab3/Lab3.srcs/sources_1/new/Lab3design.v:84]
+INFO: [Synth 8-6155] done synthesizing module 'control_unit' (5#1) [C:/Users/achpe/Lab3/Lab3.srcs/sources_1/new/Lab3design.v:84]
+WARNING: [Synth 8-689] width (5) of port connection 'regrt' does not match port width (1) of module 'control_unit' [C:/Users/achpe/Lab3/Lab3.srcs/sources_1/new/Lab3design.v:747]
+INFO: [Synth 8-6157] synthesizing module 'instruction_mux' [C:/Users/achpe/Lab3/Lab3.srcs/sources_1/new/Lab3design.v:433]
+INFO: [Synth 8-6155] done synthesizing module 'instruction_mux' (6#1) [C:/Users/achpe/Lab3/Lab3.srcs/sources_1/new/Lab3design.v:433]
+WARNING: [Synth 8-689] width (5) of port connection 'regrt' does not match port width (1) of module 'instruction_mux' [C:/Users/achpe/Lab3/Lab3.srcs/sources_1/new/Lab3design.v:748]
+INFO: [Synth 8-6157] synthesizing module 'mux_wn' [C:/Users/achpe/Lab3/Lab3.srcs/sources_1/new/Lab3design.v:450]
+INFO: [Synth 8-6155] done synthesizing module 'mux_wn' (7#1) [C:/Users/achpe/Lab3/Lab3.srcs/sources_1/new/Lab3design.v:450]
+INFO: [Synth 8-6157] synthesizing module 'mux_d' [C:/Users/achpe/Lab3/Lab3.srcs/sources_1/new/Lab3design.v:465]
+INFO: [Synth 8-6155] done synthesizing module 'mux_d' (8#1) [C:/Users/achpe/Lab3/Lab3.srcs/sources_1/new/Lab3design.v:465]
+INFO: [Synth 8-6157] synthesizing module 'register_file' [C:/Users/achpe/Lab3/Lab3.srcs/sources_1/new/Lab3design.v:482]
+ERROR: [Synth 8-27] procedural assign not supported [C:/Users/achpe/Lab3/Lab3.srcs/sources_1/new/Lab3design.v:511]
+ERROR: [Synth 8-6156] failed synthesizing module 'register_file' [C:/Users/achpe/Lab3/Lab3.srcs/sources_1/new/Lab3design.v:482]
+ERROR: [Synth 8-6156] failed synthesizing module 'datapath' [C:/Users/achpe/Lab3/Lab3.srcs/sources_1/new/Lab3design.v:701]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:01 ; elapsed = 00:00:03 . Memory (MB): peak = 407.469 ; gain = 151.773
+---------------------------------------------------------------------------------
+synthesize failed
+INFO: [Common 17-83] Releasing license: Synthesis
+20 Infos, 4 Warnings, 0 Critical Warnings and 4 Errors encountered.
+synth_design failed
+ERROR: [Common 17-69] Command failed: Vivado Synthesis failed
+INFO: [Common 17-206] Exiting Vivado at Thu May  4 20:19:58 2023...
